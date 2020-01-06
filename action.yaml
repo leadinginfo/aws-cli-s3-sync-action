@@ -1,0 +1,17 @@
+name: 'AWS S3 Sync Command Action for Github Actions'
+description: 's3 sync command action from remote to local or vice versa'
+author: Rodick.OEC
+branding:
+  icon: 'cloud'
+  color: 'orange'
+inputs:
+  from:
+    description: 'the path to sync from'
+    required: true
+  to:
+    description: 'the path to sync to'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
